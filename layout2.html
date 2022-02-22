@@ -39,6 +39,7 @@
          #sidebar {
              
              width: 25%;
+             min-width: 200px;
              height: 500px;
              line-height: 500px;
              background-color: yellow;
@@ -46,15 +47,18 @@
          section h2 {
              text-align: center;
          }
+
+         #flex-content {
+             display: flex;
+             flex-wrap: wrap;
+         }
+
          #content {
              width: 75%;
              background-color: green;
              height: 500px;
              line-height: 500px;
-         }
-         #flex-content {
-             display: flex;
-             flex-wrap: wrap;
+             flex-grow: 1;
          }
 
     </style>
@@ -69,9 +73,12 @@
         <section id="sidebar">
             <h2>SIDEBAR</h2>
         </section>
+
         <section id="content">
             <h2>CONTENT</h2>
         </section>
+
+        
     </div>
     <footer>
         <h2>FOOTER</h2>
