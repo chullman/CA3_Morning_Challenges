@@ -23,10 +23,21 @@
              margin: 0;
              padding: 0;
          }
+         footer {
+             margin: 0;
+             padding: 0;
+             width: 100%;
+             height: 50px;
+             line-height: 50px;
+             background-color: blue;
+             text-align: center;
+         }
          h2 {
             margin: 0;
+            overflow: hidden;
          }
-         section {
+         #sidebar {
+             
              width: 25%;
              height: 500px;
              line-height: 500px;
@@ -35,6 +46,17 @@
          section h2 {
              text-align: center;
          }
+         #content {
+             width: 75%;
+             background-color: green;
+             height: 500px;
+             line-height: 500px;
+         }
+         #flex-content {
+             display: flex;
+             flex-wrap: wrap;
+         }
+
     </style>
 
 </head>
@@ -42,8 +64,18 @@
     <header>
         <h2>HEADER</h2>
     </header>
-    <section>
-        <h2>SIDEBAR</h2>
-    </section>
+
+    <div id="flex-content">
+        <section id="sidebar">
+            <h2>SIDEBAR</h2>
+        </section>
+        <section id="content">
+            <h2>CONTENT</h2>
+        </section>
+    </div>
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+
 </body>
 </html>
