@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Link</title>
+
+    <style>
+
+        #button-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .button1 {
+            width: 200px;
+            height: 50px;
+            background-color: aqua;
+            min-width: 200px;
+            line-height: 50px;
+            position: relative;
+        }
+
+        .button1 p {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .button1:hover .button-hover-dropdown {
+            display: block;
+        }
+
+        .button-hover-dropdown {
+            position: absolute;
+            display: none;
+            top: 50px;
+            width: 200px;
+            height: 100px;
+            background-color: white;
+            box-shadow: 10px 10px 10px gray;
+        }
+
+        .dropdown-content-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .dropdown-content-container p {
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Menu dropdown</h1>
+    <div id="button-container">
+        <div class="button1">
+            <p>Menu</p>
+            <div class="button-hover-dropdown">
+                <div class="dropdown-content-container">
+                    <p>Menu item 1</p>
+                    <p>Menu item 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
