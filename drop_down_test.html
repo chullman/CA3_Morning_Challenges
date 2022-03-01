@@ -22,6 +22,7 @@
             min-width: 200px;
             line-height: 50px;
             position: relative;
+            
         }
 
         .button1 p {
@@ -32,6 +33,19 @@
 
         .button1:hover .button-hover-dropdown {
             display: block;
+            animation-name: dropdown-transition;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes dropdown-transition {
+            0% {
+                transform: scale(1, 0);
+                transform-origin: top;            
+            }
+            100% {
+                transform: scale(1, 1);
+            }
         }
 
         .button-hover-dropdown {
@@ -39,7 +53,8 @@
             display: none;
             top: 50px;
             width: 200px;
-            height: 100px;
+
+            
             background-color: white;
             box-shadow: 10px 10px 10px gray;
         }
@@ -49,10 +64,7 @@
             flex-direction: column;
             flex-wrap: wrap;
             align-items: flex-start;
-        }
-
-        .dropdown-content-container p {
-
+            height: 100%;
         }
 
     </style>
@@ -67,6 +79,7 @@
                 <div class="dropdown-content-container">
                     <p>Menu item 1</p>
                     <p>Menu item 2</p>
+                    <p>Menu item 3</p>
                 </div>
             </div>
         </div>
