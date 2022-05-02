@@ -1,3 +1,3 @@
-# CA3 Morning Challenges
+# Morning Challenges
 
-Morning Challenges for Web Dev Standard 2022
+Morning Challenges Solutions for Web Dev Standard 2022
