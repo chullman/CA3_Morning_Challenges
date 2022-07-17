@@ -24,6 +24,8 @@ const capitaliseTheFront = (string) => {
 	return new_string;
 }
 
+console.log(capitaliseTheFront("TWO words"));
+
 // Leave this line
 module.exports = capitaliseTheFront;
 
